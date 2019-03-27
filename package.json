@@ -19,6 +19,7 @@
     "dk:stop": "./stopdocker", 
     "dk:publish:tag":"docker tag nodalping jgwill/nodalping",
     "dk:publish:push":"docker push jgwill/nodalping:latest",
+    "dk:tag-publish":"yarn dk:publish:tag && dk:publish:push",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod --aot --buildOptimizer --commonChunk --vendorChunk --optimization --progress",
