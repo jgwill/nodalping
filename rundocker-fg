@@ -1,0 +1,6 @@
+docker run -it \
+  -v ${PWD}:/usr/src/app \
+  -v /usr/src/app/node_modules \
+  -p 4223:4223 \
+  --rm \
+  nodalping

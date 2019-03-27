@@ -1,0 +1,73 @@
+{
+  "name": "nodalping",
+  "version": "0.0.2",
+  "description": "NodalpiNG is a Docker hosting an Angular Base container",
+  "author": {
+    "name": "Guillaume Isabelle",
+  }, 
+  "contributors": [
+ 
+  ],
+  "homepage": "https://github.com/jgwill/nodalping",
+  "copyright": "Copyright 2019",
+  "license": "MIT",
+  "scripts": {
+    "dk:build": "docker build -t nodalping .",
+    "dk:run-fg": "./rundocker-fg",
+    "dk:run-bg": "./stopdocker ; ./rundocker-bg",
+    "dk:run": "npm run dk:run-bg",
+    "dk:stop": "./stopdocker", 
+    "dk:publish:tag":"docker tag nodalping jgwill/nodalping",
+    "dk:publish:push":"docker push jgwill/nodalping:latest",
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build --prod --aot --buildOptimizer --commonChunk --vendorChunk --optimization --progress",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^7.2.6",
+    "@angular/common": "^7.2.6",
+    "@angular/compiler": "^7.2.6",
+    "@angular/core": "^7.2.6",
+    "@angular/forms": "^7.2.6",
+    "@angular/http": "^7.2.6",
+    "@angular/platform-browser": "^7.2.6",
+    "@angular/platform-browser-dynamic": "^7.2.6",
+    "@angular/router": "^7.2.6",
+
+
+    "rxjs": "^6.4.0",
+
+
+    "tslib": "^1.9.0",
+    "zone.js": "^0.8.29"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^0.13.3",
+    "@angular/cli": "^7.3.3",
+    "@angular/compiler-cli": "^7.2.6",
+    "@angular/language-service": "^7.2.6",
+    "@types/jasmine": "^3.3.9",
+    "@types/jasminewd2": "^2.0.6",
+    "@types/node": "^11.9.4",
+    "codelyzer": "^4.5.0",
+    "jasmine-core": "^3.3.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "karma": "^4.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage-istanbul-reporter": "^2.0.5",
+    "karma-jasmine": "^2.0.1",
+    "karma-jasmine-html-reporter": "^1.4.0",
+    "protractor": "^5.4.2",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "typescript": "~3.2.4"
+  },
+  "engines": {
+    "node": ">= 8.9.4",
+    "npm": ">= 5.6.0"
+  }
+}

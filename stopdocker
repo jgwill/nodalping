@@ -1,0 +1,2 @@
+docker stop nodalping-container
+docker rm nodalping-container
