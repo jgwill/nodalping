@@ -14,6 +14,9 @@ RUN npm i yarn --g
 RUN npm install -g @angular/cli 
 #@angular-devkit/build-angular
 
+
+RUN  rm -rf ~/.npm/ ~/.yarn/
+
 #RUN npm install -g perfect-scrollbar  chalk  tsickle typescript
 
 
